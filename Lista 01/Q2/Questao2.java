@@ -24,11 +24,10 @@ public class Questao2 {
 
           while (text_origem.hasNextLine()){
             if (text_origem.hasNextLine()){
-              System.out.println();
               ps.println(text_origem.nextLine());
             }
           }
-          //funcionando
+          
           ps.close();
           text_origem.close();
           scann.close();
