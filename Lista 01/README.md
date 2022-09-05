@@ -1,18 +1,10 @@
-## Getting Started
+<h2> Lista de exercicios 01 <h2>
+<h3> Tópico - Manipulação de arquivos <h3>
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+<h4> Questão 1. </h4>
+  <p> Crie uma aplicação Java para receber via entrada de teclado um caminho ou nome de arquivo texto e dois números inteiros (n1 e n2).
+A aplicação deve exibir as linhas do arquivo entre n1 e n2, incluindo as linhas n1 e n2. Se n1 não for definido, deve-se exibir as linhas do arquivo a partir da primeira linha até n2. Se n2 não for definido, deve-se exibir as linhas do arquivo a partir de n1 até o final do arquivo. </p>
 
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+<h4> Questão 2. </h4>
+  <p> Escreva uma aplicação para ler um arquivo texto ou binário qualquer e gravá-lo em outro arquivo (arquivo destino).
+Os nomes dos arquivos (origem e destino) devem ser definidos via argumentos de linha de comando (Dica: usar o String args[] do método main). </p>
