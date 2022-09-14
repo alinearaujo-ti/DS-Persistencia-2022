@@ -1,20 +1,13 @@
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.ObjectInputStream;
+import java.io.File;
 
-public class Deserializa {
-    public static void main(String[] args) throws IOException{
-        Casa c = null;
+import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 
-        try {
-          FileInputStream fileIn = new FileInputStream("C:\\Users\\aline\\Documents\\DEV\\DS-Persistencia-2022\\Lista 03\\auxiliar.txt");
-          ObjectInputStream in = new ObjectInputStream(fileIn);
-          c = (Casa) in.readObject();
-          in.close();
-          fileIn.close();
-        } catch (Exception e) {
-          e.printStackTrace();
-        }
+public class DeserializaXML {
+    public static void main(String[] args) throws Exception{
+        
+        File file = new File("casas.xml");
+        XmlMapper XmlMapper = new XmlMapper();
+        Casa c = XmlMapper.readValue(file, Casa.class);
         System.out.println(c);
       
     }

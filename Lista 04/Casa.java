@@ -1,20 +1,13 @@
-import java.io.Serializable;
-
-public class Casa implements Serializable {
+public class Casa {
 
   private int numero;
   private String endereco;
-  private String modelo;
-  private String dono;
 
-  public Casa(int numero, String endereco, String modelo, String dono) {
+  public Casa() {}
+
+  public Casa(int numero, String endereco) {
     this.numero = numero;
     this.endereco = endereco;
-    this.modelo = modelo;
-    this.dono = dono;
-  }
-
-  public Casa() {
   }
 
   public String getEndereco(String endereco){
@@ -33,23 +26,9 @@ public class Casa implements Serializable {
     this.numero = numero;
   }
 
-  public String getModelo(String modelo){
-    return modelo;
-  }
 
-  public void setModelo(String modelo){
-    this.modelo = modelo;
-  }
-
-  public String getDono(String dono){
-    return dono;
-  }
-
-  public void setDono(String dono){
-    this.dono = dono;
-  }
-
+  @Override
   public String toString(){
-    return "Casa [Endereco = " + endereco + ", Numero = " + numero + ", Modelo = " + modelo + ", Nome do dono = " + dono + "]";
+    return "Casa [Endereco = " + endereco + ", Numero = " + numero + "]";
   }
 }
